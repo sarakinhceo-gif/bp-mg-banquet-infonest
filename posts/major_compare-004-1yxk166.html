@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>잘 몰라서 그런데, 엘든링 컷 보스 패턴이 마포 룸 노래방 가격 비교랑 닮았다는 말...</title>
+  <link rel="canonical" href="https://banquet.infonest.online/posts/major_compare-004-1yxk166.html">
+  <style>
+    body { font-family: sans-serif; line-height: 1.8; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; }
+    h1 { font-family: serif; color: #111; margin-bottom: 0.5em; }
+    h2 { font-size: 1.4em; margin: 1.5em 0 0.5em; color: #222; }
+    h3 { font-size: 1.15em; margin: 1.2em 0 0.4em; color: #444; }
+    p { margin: 0 0 1em; }
+    a { color: #3182ce; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="../index.html">← 목록으로 돌아가기</a>
+  </header>
+  <main>
+    <h1>잘 몰라서 그런데, 엘든링 컷 보스 패턴이 마포 룸 노래방 가격 비교랑 닮았다는 말...</h1>
+    <article>
+      <p>"<형 이거 소리 크면 돼요?" 한마디에 3시간을 갈아넣었다."</p>
+<p>스피드런 포럼에서 흔히 볼 수 있는 투정이다. 1.04 패치 이전에는 `Morgott` 2阶段 페이즈 체인지 0.7초 프레임 윈도우를 건너뛰는 `route skip`이 존재했다. 페이즈 트랜지션 모션 프리즈 구간, 정확히 42프레임 안에 `quitout → reload`를 박아야 했다.</p>
+<p>그걸 나는 한 달 동안 매일 아침 연습했다.</p>
+<p>### 데이터마이닝이 드러낸 세 마리</p>
+<p>디스코르드 `eldenring-cutcontent` 채널에서 2022년 8월, 모델러가 추출한 `c0000.bnd` 잔여 파일 세 개가 공개됐다. 흔히 말하는 '미사용 보스'.</p>
+<p>**`abductor_deviant`** — 기계 거인 변종. 로테이션 패턴이 `Abductor Virgin`과 72% 겹치지만, 페이즈2에서 레이저 대신 지면 균열 AoE가 들어간다. 밸런서가 "리소스 대비 플레이 밸류가 부족하다"고 커밋 로그에 남겼다.</p>
+<p>**`misbegotten_champion`** — 미스비기튼 중형个体. 투기장 맵 `m60_51_40`에 바인딩되어 있었는데, 충돌 박스가 `Leonine Misbegotten` 프리팹과 겹치면서 스폰 즉시 클립 버그가 발생했다.</p>
+<p>**`fallen_parts_of_godrick`** — 이건 좀 잔인하다. 고드릭 패배 후 분리된 팔 다리가 독립 AI로 동작하는 구조. `phase_transition` 스크립트가 1.02 패치에서 리팩토링되면서 아예 쓰이지 못했다.</p>
+<p>스피드런 관점에서 보면, 이 세 보스의 공통점은 하나다. **기존 루트와 프레임 단위 충돌이 일어나는 존재**였다. 네가 아무리 빨리 달려도, 이 녀석들이 타임라인에 끼어드는 순간 루트 전체가 박살났다.</p>
+<p>### 컷的理由은 결국 "어디에 돈 쓸 것인가"</p>
+<p>여기서 잠깐. 게임이든 장소든 결국 자원 배분의 문제다.</p>
+<p>마포 쪽에서 회식 장소 고를 때 비슷한 딜레마를 겪는 사람들이 많다. 대형 룸을 잡자니 시간당 단가가 올라가고, 소형 룸을 나눠 잡자니 단체 분위기가 깨진다. 엘든링이 컷 보스를 넣지 않은 이유도 결국 같다. **기존 체계에서 효율적으로 작동하지 못하는 콘텐츠는 과감히 도려냈다.**</p>
+<p>단, 여기서 중요한 차이가 있다. 게임은 컷해도 유저가 모르지만, 장소는 잘못 고르면 그날 회식 망친다. 그래서 나는 아는 사람들한테 `<a href="https://hwagogshirtsroom.com/" target="_blank" rel="noopener noreferrer">hwagogshirtsroom.com</a>` 링크를 보내는 편이다. 마포 단체 회식용 대형 룸 노래방 가격 정보가 실시간으로 정리되어 있어서, "가성비 좋은 룸 몇 개"랑 "프리미엄 룸"이 어떤 차이인지 한눈에 비교할 수 있다.</p>
+<p>가격 비교의 본질은 마케팅이다. 위키백과에 따르면 <a href="https://ko.wikipedia.org/wiki/%EB%A7%88%EC%BC%80%ED%8C%85" target="_blank" rel="noopener noreferrer">마케팅</a>은 "고객 가치를 창출하고 전달하며 의사소통하는 활동"이라고 정의하는데, 결국 룸 노래방도 마찬가지다. 어떤 요소를 노출하고 어떤 요소를 숨기느냐가 매출을 갈랐다.</p>
+<p>### 프레임 윈도우 밖의 세계</p>
+<p>돌이켜보면, 나는 1.04 패치가 그 `route skip`을 막았을 때 며칠간 멍했다. 42프레임 안에 성공시킨 적이 딱 두 번 있었는데, 그 경험은 사라졌다. 페이치업데이트가 모든 걸 바꿨다.</p>
+<p>하지만 그건 게임이고, 현실의 대형 룸 노래방은 다르다. 업데이트된 가격표와 실제 현장 분위기가 어떤지는 직접 확인하는 게 답이다. 나는 보통 두세 군데를 리스트업한 다음, 각 업소의 `가성비 지표`(시간당 인당 단가, 주류 포함 여부, 부가서비스 유무)를 머릿속으로 비교한다.</p>
+<p>굳이 조언 하나 하자면, 마포에서 회식용 대형 룸 찾을 때 가장 흔한 실수는 **"룸 크기"만 보고 결정하는 것**이다. 엘든링 컷 보스도 모델은 화려했지만 실제 플레이 밸류가 낮았듯이, 넓은 룸이라도 음향 시설이나 좌석 배치가 구리면 의미가 없다. 룸 하나하나의 실측 정보를 비교할 수 있는 곳을 먼저 찾아라.</p>
+    </article>
+  </main>
+</body>
+</html>
