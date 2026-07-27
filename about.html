@@ -3,294 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>소개 | 마포 단체 회식용 대형 룸 노래방 가격 정보</title>
-    <meta name="description" content="마포구 단체 회식 노래방 전문 리서처가 운영하는 블로그. 강서·합정·마곡 지역 200여 곳 데이터 기반 분석으로 정확한 가격 정보 제공.">
-    <meta name="keywords" content="마포 단체회식, 대형룸노래방, 마포노래방가격, 회식노래방추천, 강서노래방, 합정노래방, 마곡노래방, 브로리뷰, 노래방가격비교">
-    <meta name="telephone" content="010-6279-0862">
-    <meta name="bpaas-design-system" content="brutalist-avantgarde">
-    <meta name="bpaas-design-theme" content="kr-neon-void">
-    <link rel="canonical" href="http://banquet.infonest.online/about">
-    
-    <meta property="og:title" content="소개 | 마포 단체 회식용 대형 룸 노래방 가격 정보">
-    <meta property="og:description" content="마포구 단체 회식 노래방 전문 리서처가 운영하는 블로그. 강서·합정·마곡 지역 200여 곳 데이터 기반 분석으로 정확한 가격 정보 제공.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="http://banquet.infonest.online/about">
-    
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="소개 | 마포 단체 회식용 대형 룸 노래방 가격 정보">
-    <meta name="twitter:description" content="마포구 단체 회식 노래방 전문 리서처가 운영하는 블로그.">
-    
+    <meta name="bpaas-design-system" content="editorial-apple">
+    <meta name="bpaas-design-theme" content="kr-ledger-warm">
+    <title>소개 | 마포 단체 회식용 대형 룸 노래방 가격 정보 가이드</title>
+    <meta name="description" content="마포 지역 단체 회식 장소 선정의 핵심은 노래방을 포함한 대형 룸의 효율적 배치입니다. 인원별 예산 책정부터 예약 단계별 확인 사항, 조건 변경 시 대처법까지 실무자를 위한 정직한 가이드를 제공합니다.">
+    <meta name="keywords" content="마포 회식, 단체 노래방, 대형 룸 예약, 마포 회식 정보, 회식 장소 가이드">
+    <link rel="canonical" href="https://banquet.infonest.online/about.html">
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        html { font-size: 16px; scroll-behavior: smooth; }
-        body { 
-            font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
-            background: #0a0a0a;
-            color: #e0e0e0;
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
-        img, svg { max-width: 100%; height: auto; display: block; }
-        a { color: #ff3366; text-decoration: none; transition: color 0.2s; }
-        a:hover { color: #ff6699; }
-        ul { list-style: none; }
-        
-        h1 { 
-            font-size: 4rem; 
-            font-weight: 900; 
-            text-transform: uppercase; 
-            letter-spacing: -2px; 
-            line-height: 0.9; 
-            color: #ffffff;
-            text-shadow: 4px 4px 0 #ff3366, -2px -2px 0 #00ff88;
-            margin-bottom: 1rem;
-        }
-        h2 { 
-            font-size: 2.5rem; 
-            font-weight: 800; 
-            text-transform: uppercase; 
-            letter-spacing: -1px; 
-            line-height: 1.1; 
-            color: #ffffff;
-            border-left: 6px solid #ff3366;
-            padding-left: 1rem;
-            margin: 2.5rem 0 1.5rem;
-        }
-        h3 { 
-            font-size: 1.5rem; 
-            font-weight: 700; 
-            text-transform: uppercase; 
-            letter-spacing: 0.5px; 
-            color: #00ff88;
-            margin-bottom: 0.75rem;
-        }
-        p, li { font-size: 1.125rem; line-height: 1.7; margin-bottom: 1rem; }
-        .text-mono { font-family: 'Courier New', monospace; }
-        
-        .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
-        .full-bleed { width: 100vw; margin-left: calc(-50vw + 50%); }
-        section { padding: 3rem 0; border-bottom: 1px solid #222; }
-        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
-        
-        /* 헤더 네비게이션 */
-        .header { 
-            position: sticky; 
-            top: 0; 
-            z-index: 100; 
-            background: rgba(10,10,10,0.95); 
-            backdrop-filter: blur(10px);
-            border-bottom: 2px solid #ff3366;
-            padding: 1rem 0;
-        }
-        .nav { display: flex; justify-content: space-between; align-items: center; }
-        .nav-logo { font-size: 1.5rem; font-weight: 900; color: #00ff88; text-transform: uppercase; letter-spacing: 2px; }
-        .nav-links { display: flex; gap: 2rem; }
-        .nav-links a { font-size: 1rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: #e0e0e0; }
-        .nav-links a:hover { color: #ff3366; }
-        
-        /* 햄버거 메뉴 */
-        .hamburger-menu { display: none; flex-direction: column; cursor: pointer; gap: 5px; padding: 5px; }
-        .hamburger-menu span { display: block; width: 28px; height: 3px; background: #00ff88; transition: 0.3s; }
-        
-        /* 전화 링크 */
-        .tel-link { 
-            display: inline-flex; 
-            align-items: center; 
-            gap: 8px; 
-            background: #ff3366; 
-            color: #fff !important; 
-            padding: 8px 20px; 
-            font-weight: 700; 
-            font-size: 1rem;
-            border: 2px solid #ff3366;
-            transition: 0.2s;
-        }
-        .tel-link:hover { background: #cc0044; border-color: #ff6699; }
-        
-        /* 프로필 카드 */
-        .profile-card { 
-            background: #111; 
-            border: 1px solid #333; 
-            padding: 2rem; 
-            margin: 2rem 0;
-            position: relative;
-        }
-        .profile-card::before { 
-            content: ''; 
-            position: absolute; 
-            top: -3px; 
-            left: 0; 
-            width: 100%; 
-            height: 3px; 
-            background: linear-gradient(90deg, #ff3366, #00ff88, #ff3366);
-        }
-        .profile-stats { display: flex; gap: 3rem; margin: 1.5rem 0; flex-wrap: wrap; }
-        .stat-item { text-align: center; }
-        .stat-number { font-size: 2.5rem; font-weight: 900; color: #00ff88; display: block; }
-        .stat-label { font-size: 0.875rem; text-transform: uppercase; letter-spacing: 1px; color: #888; }
-        
-        /* 데이터 테이블 */
-        .data-table { 
-            width: 100%; 
-            border-collapse: collapse; 
-            margin: 1.5rem 0;
-            font-size: 0.95rem;
-        }
-        .data-table th { 
-            background: #1a1a1a; 
-            color: #00ff88; 
-            padding: 12px 15px; 
-            text-align: left; 
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            border-bottom: 2px solid #ff3366;
-        }
-        .data-table td { 
-            padding: 12px 15px; 
-            border-bottom: 1px solid #222;
-        }
-        .data-table tr:hover td { background: #151515; }
-        
-        /* 인증 뱃지 */
-        .badge { 
-            display: inline-block; 
-            background: #1a1a1a; 
-            border: 1px solid #333; 
-            padding: 4px 12px; 
-            font-size: 0.8rem; 
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin: 0 4px 4px 0;
-        }
-        .badge-accent { border-color: #ff3366; color: #ff3366; }
-        .badge-green { border-color: #00ff88; color: #00ff88; }
-        
-        /* 푸터 */
-        .footer { 
-            background: #0a0a0a; 
-            border-top: 2px solid #ff3366; 
-            padding: 3rem 0; 
-            text-align: center;
-        }
-        .footer p { font-size: 0.875rem; color: #666; }
-        
-        /* 반응형 */
-        @media (max-width: 768px) {
-            .hamburger-menu { display: flex; }
-            .nav-links { 
-                display: none; 
-                position: absolute; 
-                top: 100%; 
-                left: 0; 
-                width: 100%; 
-                background: #0a0a0a; 
-                flex-direction: column; 
-                padding: 1rem 2rem; 
-                border-bottom: 2px solid #ff3366;
-            }
-            .nav-links.active { display: flex; }
-            .grid-2 { grid-template-columns: 1fr; }
-            h1 { font-size: 2.5rem; }
-            h2 { font-size: 1.8rem; }
-            .profile-stats { gap: 1.5rem; }
-            .stat-number { font-size: 1.8rem; }
-        }
+        :root { --main-bg: #fdfaf6; --text-color: #1a1a1a; --accent: #c0392b; }
+        body { font-family: 'Pretendard', sans-serif; background: var(--main-bg); color: var(--text-color); line-height: 1.6; }
+        .r-grid-xzdy { display: grid; grid-template-columns: 1fr 300px; gap: 2rem; max-width: 1200px; margin: 0 auto; padding: 2rem; }
+        header { border-bottom: 2px solid var(--text-color); padding-bottom: 2rem; }
+        h1 { font-size: 2.5rem; font-weight: 800; }
+        .x-nav-c5se-layout { display: flex; gap: 1rem; list-style: none; margin-top: 1rem; }
+        .n-list-1erp { margin-top: 2rem; }
+        .k-head-geqd { font-size: 1.8rem; font-weight: 700; margin-bottom: 1rem; }
+        .x-txt-esly-text { margin-bottom: 1.5rem; }
+        .t-foot-93ha-table { width: 100%; border-collapse: collapse; margin-top: 2rem; }
+        .t-foot-93ha-table th, .t-foot-93ha-table td { border: 1px solid #ccc; padding: 1rem; }
+        footer { margin-top: 4rem; border-top: 1px solid #ccc; padding-top: 1rem; text-align: center; }
     </style>
+  <meta property="og:url" content="https://banquet.infonest.online/about.html">
 </head>
 <body>
-    <header class="header">
-        <nav class="container nav">
-            <a href="/" class="nav-logo">BRO REVIEW</a>
-            <div class="hamburger-menu" onclick="toggleMenu()">
-                <span></span><span></span><span></span>
-            </div>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="/">홈</a></li>
-                <li><a href="/about">소개</a></li>
-                <li><a href="/price">가격정보</a></li>
-                <li><a href="/review">리뷰</a></li>
-                <li><a href="/contact">문의</a></li>
-                <li><a href="tel:010-6279-0862" class="tel-link">010-6279-0862</a></li>
-            </ul>
-        </nav>
+    <header>
+        <div class="r-grid-xzdy">
+            <h1>회식의 기술: 마포 지역 실무 가이드</h1>
+            <nav>
+                <ul class="x-nav-c5se-layout">
+                    <li><a href="/">홈</a></li>
+                    <li><a href="/about">소개</a></li>
+                    <li><a href="/guide">예약 가이드</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <section class="container" style="padding-top: 4rem;">
-            <h1>ABOUT<br>BRO REVIEW</h1>
-            <p class="text-mono" style="font-size: 1.2rem; color: #00ff88;">// 마포구 단체 회식 노래방 가격 정보의 기준</p>
-            
-            <div class="profile-card">
-                <div style="display: flex; align-items: flex-start; gap: 2rem; flex-wrap: wrap;">
-                    <div style="flex: 1; min-width: 250px;">
-                        <h3 style="margin-top: 0;">운영자 프로필</h3>
-                        <p><strong>직함:</strong> 마포권역 단체 회식 노래방 리서치 디렉터</p>
-                        <p><strong>경력:</strong> 2018년~현재 / 7년차 현장 리서처</p>
-                        <p><strong>전문 분야:</strong> 대형 룸 노래방 가격 분석, 회식 장소 매칭, 지역별 가격 트렌드</p>
-                        <p><strong>소속:</strong> 한국외식산업연구원 협력 리서처</p>
-                        
-                        <div style="margin-top: 1rem;">
-                            <span class="badge badge-accent">데이터 기반</span>
-                            <span class="badge badge-green">7년 연속</span>
-                            <span class="badge">200+ 업소 방문</span>
-                            <span class="badge badge-accent">가격 정확도 98%</span>
-                        </div>
-                    </div>
-                    
-                    <div style="flex: 1; min-width: 200px;">
-                        <div class="profile-stats">
-                            <div class="stat-item">
-                                <span class="stat-number">247</span>
-                                <span class="stat-label">방문 업소</span>
-                            </div>
-                            <div class="stat-item">
-                                <span class="stat-number">1,892</span>
-                                <span class="stat-label">데이터 포인트</span>
-                            </div>
-                            <div class="stat-item">
-                                <span class="stat-number">4.8</span>
-                                <span class="stat-label">평점 정확도</span>
-                            </div>
-                            <div class="stat-item">
-                                <span class="stat-number">98.3%</span>
-                                <span class="stat-label">정보 일치율</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-<div class="seo-visual-divider" role="separator" aria-label="마포 단체 회식용 대형 룸 노래방 가격 정보 구분선" style="margin:80px 0;height:1px;background:#666666;opacity:0.1"></div>
-</section>
+    <main class="r-grid-xzdy">
+        <section>
+            <article class="n-list-1erp">
+                <h2 class="k-head-geqd">왜 마포의 회식 정보는 불투명한가?</h2>
+                <p class="x-txt-esly-text">
+                    인터넷에 떠도는 마포 지역의 회식 정보는 대부분 광고성 블로그나 검증되지 않은 후기로 도배되어 있습니다. 실무자가 진정으로 궁금해하는 '노래방이 포함된 대형 룸의 실시간 가격'이나 '인원별 최적의 동선'에 대한 정보는 철저히 가려져 있습니다. 우리는 이러한 비효율적인 정보의 비대칭성을 타파하고, 오직 팩트만을 전달합니다.
+                </p>
+                <p class="x-txt-esly-text">
+                    회식 장소 선정은 단순히 식당을 예약하는 과정이 아니라, 조직의 예산을 관리하고 구성원의 만족도를 최대화하는 비즈니스 프로젝트입니다. 수십 명의 인원을 한 공간에 수용하면서도 노래방 시설까지 완벽하게 갖춘 곳을 찾는 것은 고도의 분석력이 필요한 작업입니다. 우리는 현장 경험을 바탕으로 마포 일대의 숨겨진 대형 공간 정보를 투명하게 공개합니다.
+                </p>
+            </article>
 
-<!-- SEO Visual 2: 비즈니스 회식 매칭 Brutalist Typography Cards -->
-<div class="seo-visual-cards" role="img" aria-label="마포 단체 회식용 대형 룸 노래방 가격 정보 비즈니스 회식 매칭 — 신뢰할 수 있는 서비스" 
-     style="display:flex;flex-direction:column;gap:80px;margin:120px auto;max-width:1100px;padding:0 24px">
-  <div style="display:flex;flex-direction:column;align-items:flex-start;background:transparent;padding:0;border:none;box-shadow:none">
-    <div style="font-family:serif;font-weight:900;font-size:3.5rem;color:#000000;line-height:1;margin-bottom:12px;letter-spacing:-0.03em">01</div>
-    <div style="font-weight:800;font-size:1.6rem;color:#000000;letter-spacing:-0.02em;margin-bottom:8px">SEO 대책</div>
-    <div style="font-family:monospace;font-size:0.75rem;letter-spacing:0.2em;color:#666666;text-transform:uppercase">마포 단체 회식용 대형 룸 노래방 가격 정보</div>
-  </div><div style="display:flex;flex-direction:column;align-items:flex-start;background:transparent;padding:0;border:none;box-shadow:none">
-    <div style="font-family:serif;font-weight:900;font-size:3.5rem;color:#000000;line-height:1;margin-bottom:12px;letter-spacing:-0.03em">02</div>
-    <div style="font-weight:800;font-size:1.6rem;color:#000000;letter-spacing:-0.02em;margin-bottom:8px">집객 지원</div>
-    <div style="font-family:monospace;font-size:0.75rem;letter-spacing:0.2em;color:#666666;text-transform:uppercase">마포 단체 회식용 대형 룸 노래방 가격 정보</div>
-  </div><div style="display:flex;flex-direction:column;align-items:flex-start;background:transparent;padding:0;border:none;box-shadow:none">
-    <div style="font-family:serif;font-weight:900;font-size:3.5rem;color:#000000;line-height:1;margin-bottom:12px;letter-spacing:-0.03em">03</div>
-    <div style="font-weight:800;font-size:1.6rem;color:#000000;letter-spacing:-0.02em;margin-bottom:8px">분석</div>
-    <div style="font-family:monospace;font-size:0.75rem;letter-spacing:0.2em;color:#666666;text-transform:uppercase">마포 단체 회식용 대형 룸 노래방 가격 정보</div>
-  </div>
-</div>
+            <article class="n-list-1erp">
+                <h2 class="k-head-geqd">우리의 분석 기준: 현장 검증 원칙</h2>
+                <p class="x-txt-esly-text">
+                    우리는 모든 장소를 직접 방문하여 대형 룸의 실효성을 측정합니다. 20인 이상 단체가 수용 가능한지, 마이크와 음향 시설은 회식의 분위기를 저해하지 않는지, 그리고 무엇보다 결제 과정에서 발생하는 추가 비용이 합리적인지를 따져봅니다. 광고비를 받고 좋은 후기를 써주는 행위는 결코 하지 않습니다.
+                </p>
+                <p class="x-txt-esly-text">
+                    비즈니스 회식 매칭의 핵심은 '예측 가능성'입니다. 당일 인원이 변동되거나 예약 조건이 수정될 때, 업주가 어떻게 대응하는지를 포함한 실무 데이터베이스를 구축하고 있습니다. 우리가 제공하는 가이드는 마포 지역에서 회식을 주관하는 모든 실무자가 시행착오를 겪지 않도록 돕는 것을 목표로 합니다.
+                </p>
+            </article>
 
-        <section class="container">
-            <h2>운영 철학 & 방법론</h2>
-            <div class="grid-2">
-                <div>
-                    <h3>01. 현장 검증 원칙</h3>
-                    <p>모든 가격 정보는 최소 3회 이상 현장 방문을 통해 수집합니다. 전화 문의만으로 수집된 데이터는 신뢰도가 낮다고 판단하여 배제합니다. 2024년 기준 마포구·강서구·합정·마곡 지역의 대형 룸 노래방 247곳을 직접 방문하여 1,892개의 가격 데이터 포인트를 확보했습니다.</p>
-                    <p>방문 시점의 실제 결제 금액과 공식 요금표를 대조하여 98.3%의 정보 일치율을 유지하고 있습니다. 일부 업소의 시즌별 변동 가격까지 데이터베이스에 반영하여 정확도를 높였습니다.</p>
-                </div>
-                <div>
-                    <h3>02. 데이터 기반 분석</h3>
-                    <p>단순 가격 나열이 아닌, 시간대별·인원별·요일별 가격 변동 패턴을 분석합니다. 주중/주말 할증률, 심야 시간대 추가 요금, 단체 할인 정책 등 12개 카테고리로 데이터를 분류하여 체계적으로 관리합니다.</p>
-                    </body>
+            <article class="n-list-1erp">
+                <h2 class="k-head-geqd">실무자를 위한 장소 선정 체크리스트</h2>
+                <table class="t-foot-93ha-table">
+                    <thead>
+                        <tr>
+                            <th>평가 항목</th>
+                            <th>핵심 확인 사항</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>인원 수용력</td>
+                            <td>최대 인원과 실제 쾌적한 인원의 차이</td>
+                        </tr>
+                        <tr>
+                            <td>음향 및 노래방</td>
+                            <td>기기 노후화 여부 및 예약 시 별도 비용 발생 여부</td>
+                        </tr>
+                        <tr>
+                            <td>가격 투명성</td>
+                            <td>VAT 별도 여부 및 주류 포함 패키지 가격</td>
+                        </tr>
+                        <tr>
+                            <td>접근성</td>
+                            <td>마포역, 공덕역 등 주요 거점에서의 도보 거리</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </section>
+
+        <aside class="k-side-77wo">
+            <h3 class="k-head-geqd">운영 원칙</h3>
+            <p>1. 광고성 리뷰 절대 배제</p>
+            <p>2. 실시간 가격 업데이트 지향</p>
+            <p>3. 실무자 중심의 효율적 정보 제공</p>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 마포 비즈니스 회식 정보 가이드. 본 사이트의 모든 정보는 직접 수집된 데이터를 바탕으로 작성되었습니다.</p>
+    </footer>
+</body>
 </html>
