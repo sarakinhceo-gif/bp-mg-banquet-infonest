@@ -1,186 +1,65 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko" data-theme="onyx" data-build="a8f2c9e1">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>마포 단체 회식용 대형 룸 노래방 트렌드 & 뉴스 | 2025년 업계 동향</title>
-    <meta name="description" content="2025년 마포구 단체 회식용 대형 룸 노래방 업계 트렌드, 가격 변동, 신규 업소 오픈 정보, 소비자 선호도 변화까지 데이터 기반으로 분석합니다.">
-    <meta name="keywords" content="마포 단체회식, 대형룸노래방, 마포노래방트렌드, 회식노래방뉴스, 마포노래방가격동향, 마곡노래방신규오픈, 합정노래방리뉴얼">
-    <meta name="telephone" content="010-6279-0862">
-    <meta name="bpaas-design-system" content="brutalist-avantgarde">
-    <meta name="bpaas-design-theme" content="kr-neon-void">
-    <link rel="canonical" href="http://banquet.infonest.online/trend">
-    <meta property="og:title" content="마포 단체 회식용 대형 룸 노래방 트렌드 분석 2025">
-    <meta property="og:description" content="데이터로 보는 마포구 대형 룸 노래방 업계 현황: 가격 인상률, 지역별 선호도, 신규 업소 트렌드">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="http://banquet.infonest.online/trend">
-    <meta name="twitter:card" content="summary_large_image">
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        html { font-size: 16px; scroll-behavior: smooth; background: #0a0a0a; }
-        body { font-family: 'Arial Black', 'Impact', 'Helvetica Neue', sans-serif; background: #0a0a0a; color: #f0f0f0; line-height: 1.2; min-height: 100vh; display: flex; flex-direction: column; }
-        img, svg { max-width: 100%; height: auto; display: block; }
-        a { color: #ff2a6d; text-decoration: none; border-bottom: 2px solid transparent; transition: border-color 0.2s, color 0.2s; }
-        a:hover { border-bottom-color: #ff2a6d; color: #ff6b9d; }
-        ul { list-style: none; }
-        h1 { font-size: clamp(3rem, 10vw, 6rem); font-weight: 900; text-transform: uppercase; letter-spacing: -2px; line-height: 0.85; color: #fff; text-shadow: 4px 4px 0 #ff2a6d, 8px 8px 0 rgba(255,42,109,0.3); margin-bottom: 0.5rem; }
-        h2 { font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 900; text-transform: uppercase; letter-spacing: -1px; line-height: 0.9; color: #ff2a6d; border-left: 8px solid #ff2a6d; padding-left: 1rem; margin: 2rem 0 1.5rem; }
-        h3 { font-size: clamp(1.2rem, 3vw, 2rem); font-weight: 700; text-transform: uppercase; color: #fff; margin-bottom: 0.75rem; }
-        p, li { font-family: 'Courier New', monospace; font-size: 1.05rem; line-height: 1.5; color: #ccc; margin-bottom: 1rem; }
-        .text-mono { font-family: 'Courier New', monospace; text-transform: uppercase; letter-spacing: 2px; font-size: 0.85rem; color: #888; }
-        .container { max-width: 1280px; margin: 0 auto; padding: 0 1.5rem; }
-        .full-bleed { width: 100vw; margin-left: calc(-50vw + 50%); }
-        section { padding: 3rem 0; border-bottom: 2px solid #222; }
-        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
-        header { background: #0a0a0a; border-bottom: 4px solid #ff2a6d; padding: 1.5rem 0; position: sticky; top: 0; z-index: 100; }
-        header .container { display: flex; justify-content: space-between; align-items: center; }
-        .logo { font-size: 1.8rem; font-weight: 900; text-transform: uppercase; color: #fff; text-decoration: none; border: none; }
-        .logo:hover { border: none; color: #ff2a6d; }
-        nav ul { display: flex; gap: 2rem; }
-        nav a { font-size: 0.9rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #fff; border: none; padding: 0.25rem 0; }
-        nav a:hover { color: #ff2a6d; border: none; }
-        .hamburger-menu { display: none; flex-direction: column; cursor: pointer; gap: 5px; padding: 5px; }
-        .hamburger-menu span { display: block; width: 30px; height: 3px; background: #fff; transition: 0.3s; }
-        .tel-link { display: inline-block; background: #ff2a6d; color: #fff; padding: 0.5rem 1.5rem; font-weight: 700; font-size: 1.2rem; text-decoration: none; border: 3px solid #ff2a6d; transition: 0.2s; }
-        .tel-link:hover { background: transparent; color: #ff2a6d; border-color: #ff2a6d; }
-        .card { background: #111; border: 2px solid #222; padding: 2rem; margin-bottom: 1.5rem; transition: border-color 0.3s; }
-        .card:hover { border-color: #ff2a6d; }
-        .stat-badge { display: inline-block; background: #ff2a6d; color: #fff; padding: 0.25rem 1rem; font-size: 0.8rem; font-weight: 700; letter-spacing: 1px; margin-bottom: 1rem; }
-        .trend-list { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1.5rem; margin: 2rem 0; }
-        .trend-item { background: #111; border: 2px solid #333; padding: 1.5rem; text-align: center; }
-        .trend-item .number { font-size: 3rem; font-weight: 900; color: #ff2a6d; display: block; }
-        .trend-item .label { font-size: 0.9rem; color: #888; text-transform: uppercase; letter-spacing: 1px; }
-        footer { background: #0a0a0a; border-top: 4px solid #ff2a6d; padding: 3rem 0; margin-top: auto; text-align: center; }
-        footer p { font-size: 0.85rem; color: #666; }
-        @media (max-width: 768px) {
-            .grid-2 { grid-template-columns: 1fr; }
-            .trend-list { grid-template-columns: 1fr; }
-            nav ul { display: none; flex-direction: column; background: #111; position: absolute; top: 100%; left: 0; width: 100%; padding: 1rem; gap: 1rem; border-bottom: 4px solid #ff2a6d; }
-            nav ul.active { display: flex; }
-            .hamburger-menu { display: flex; }
-            h1 { font-size: clamp(2.5rem, 8vw, 4rem); }
-        }
-    </style>
+    <meta name="generator" content="custom-cms-9284">
+    <meta name="bpaas-design-system" content="editorial-apple">
+    <meta name="bpaas-design-theme" content="kr-noir-burgundy">
+    <title>마포 단체 회식용 대형 룸 노래방 가격 트렌드 | Black Book Concierge</title>
+    <meta name="description" content="마포 지역 직장인 회식 트렌드 분석. 대형 룸 노래방의 시간당 가격 변동과 실속 있는 예약 전략을 최신 시장 데이터 기반으로 살펴봅니다.">
+    <meta name="keywords" content="마포 회식, 대형 노래방 트렌드, 마포 단체 예약, 회식 비용 절감, 비즈니스 노래방">
+    <link rel="canonical" href="https://banquet.infonest.online/blog-3.html">
+    <link rel="stylesheet" href="style.css">
+  <meta property="og:url" content="https://banquet.infonest.online/blog-3.html">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <a href="/" class="logo">BRO REVIEW</a>
-            <nav>
-                <div class="hamburger-menu" onclick="this.nextElementSibling.classList.toggle('active')">
-                    <span></span><span></span><span></span>
-                </div>
-                <ul>
-                    <li><a href="/">홈</a></li>
-                    <li><a href="/price">가격정보</a></li>
-                    <li><a href="/trend">트렌드</a></li>
-                    <li><a href="/review">리뷰</a></li>
-                    <li><a href="/contact">문의</a></li>
-                </ul>
-            </nav>
-            <a href="tel:010-6279-0862" class="tel-link">010-6279-0862</a>
+    <nav class="nav-present">
+        <div class="n-wrap-64ia">
+            <a href="/">홈</a>
+            <a href="/trends">트렌드</a>
+            <a href="/guide">예약 가이드</a>
+            <a href="/contact">문의</a>
         </div>
-    </header>
+    </nav>
 
-    <main>
-        <section class="full-bleed" style="background:#111; padding:4rem 0; border-bottom:4px solid #ff2a6d;">
-            <div class="container">
-                <span class="stat-badge">2025 MARKET REPORT</span>
-                <h1>마포 단체 회식<br>대형 룸 노래방<br>트렌드</h1>
-                <p style="font-size:1.2rem; max-width:800px; color:#aaa;">데이터 기반 업계 분석: 가격 변동, 지역별 수요, 신규 업소 오픈 현황, 소비자 선호도 변화까지</p>
-                <p class="text-mono" style="margin-top:1rem;">업데이트: 2025년 2월 4주차 · 기준: 마포구 38개 업소 데이터</p>
-            </div>
-        </section>
-
-<!-- SEO Visual 2: 비즈니스 회식 매칭 Brutalist Typography Cards -->
-<div class="seo-visual-cards" role="img" aria-label="마포 단체 회식용 대형 룸 노래방 가격 정보 비즈니스 회식 매칭 — 신뢰할 수 있는 서비스" 
-     style="display:flex;flex-direction:column;gap:80px;margin:120px auto;max-width:1100px;padding:0 24px">
-  <div style="display:flex;flex-direction:column;align-items:flex-start;background:transparent;padding:0;border:none;box-shadow:none">
-    <div style="font-family:serif;font-weight:900;font-size:3.5rem;color:#000000;line-height:1;margin-bottom:12px;letter-spacing:-0.03em">01</div>
-    <div style="font-weight:800;font-size:1.6rem;color:#000000;letter-spacing:-0.02em;margin-bottom:8px">SEO 대책</div>
-    <div style="font-family:monospace;font-size:0.75rem;letter-spacing:0.2em;color:#666666;text-transform:uppercase">마포 단체 회식용 대형 룸 노래방 가격 정보</div>
-  </div><div style="display:flex;flex-direction:column;align-items:flex-start;background:transparent;padding:0;border:none;box-shadow:none">
-    <div style="font-family:serif;font-weight:900;font-size:3.5rem;color:#000000;line-height:1;margin-bottom:12px;letter-spacing:-0.03em">02</div>
-    <div style="font-weight:800;font-size:1.6rem;color:#000000;letter-spacing:-0.02em;margin-bottom:8px">집객 지원</div>
-    <div style="font-family:monospace;font-size:0.75rem;letter-spacing:0.2em;color:#666666;text-transform:uppercase">마포 단체 회식용 대형 룸 노래방 가격 정보</div>
-  </div><div style="display:flex;flex-direction:column;align-items:flex-start;background:transparent;padding:0;border:none;box-shadow:none">
-    <div style="font-family:serif;font-weight:900;font-size:3.5rem;color:#000000;line-height:1;margin-bottom:12px;letter-spacing:-0.03em">03</div>
-    <div style="font-weight:800;font-size:1.6rem;color:#000000;letter-spacing:-0.02em;margin-bottom:8px">분석</div>
-    <div style="font-family:monospace;font-size:0.75rem;letter-spacing:0.2em;color:#666666;text-transform:uppercase">마포 단체 회식용 대형 룸 노래방 가격 정보</div>
-  </div>
-</div>
+    <main class="n-body-iajh">
+        <header>
+            <h1>마포 회식 시장의 변화: 대형 룸 노래방 가격 구조 리포트</h1>
+            <p>최근 마포 지역 비즈니스 모임이 소규모로 파편화되면서, 대형 룸 노래방의 가격 책정 방식에도 변화의 바람이 불고 있습니다.</p>
+        </header>
 
         <section>
-            <div class="container">
-                <h2>KEY INDICATORS</h2>
-                <div class="trend-list">
-                    <div class="trend-item">
-                        <span class="number">+12.3%</span>
-                        <span class="label">연간 가격 인상률 (2024→2025)</span>
-                        <p style="font-size:0.85rem; margin-top:0.5rem;">대형 룸 기준 (15인 이상)</p>
-                    </div>
-                    <div class="trend-item">
-                        <span class="number">47%</span>
-                        <span class="label">회식 목적 방문 비중</span>
-                        <p style="font-size:0.85rem; margin-top:0.5rem;">전체 대형 룸 이용객 중</p>
-                    </div>
-                    <div class="trend-item">
-                        <span class="number">6</span>
-                        <span class="label">신규 오픈 업소 (2025 Q1)</span>
-                        <p style="font-size:0.85rem; margin-top:0.5rem;">마포·합정·마곡 지역</p>
-                    </div>
-                </div>
-            </div>
+            <h2>요즘 회식, 왜 '시간제'보다 '패키지'일까?</h2>
+            <p>예전에는 단순히 노래방 시간을 늘리는 방식이 주를 이뤘다면, 요즘은 주류와 안주, 그리고 이용 시간을 묶은 '법인 맞춤형 패키지'가 대세입니다. 이는 정산의 투명성을 높이고, 예산 초과를 방지하려는 실무진들의 니즈가 반영된 결과죠.</p>
+            <div class="r-img-6m7k">분석 데이터 시각화 자료</div>
         </section>
 
         <section>
-            <div class="container">
-                <h2>REGIONAL ANALYSIS</h2>
-                <div class="grid-2">
-                    <div class="card">
-                        <h3>합정 · 상수</h3>
-                        <p>프리미엄 대형 룸 수요 집중 지역. 2025년 1분기 기준 평균 대관료 32만원(기본 2시간, 20인 기준). 전년 대비 15% 상승. 주말 예약률 92% 기록.</p>
-                        <p class="text-mono">신규 오픈: 2개소 · 리뉴얼: 3개소</p>
-                    </div>
-                    <div class="card">
-                        <h3>마곡 · 강서</h3>
-                        <p>가성비 중심 수요. 20인 기준 평균 22만원. 신규 업소 3개소 오픈으로 경쟁 심화. 주중 할인 프로모션 활발. 회식 패키지 도입률 68%.</p>
-                        <p class="text-mono">신규 오픈: 3개소 · 평균 가격 하락 -2%</p>
-                    </div>
-                </div>
-            </div>
+            <h2>데이터로 보는 마포 대형 룸 가격 변동성</h2>
+            <article>
+                <h3>피크 타임 vs 오프 피크</h3>
+                <p>목요일 저녁은 마포 지역 내 대형 룸 노래방의 수요가 가장 몰리는 시간대입니다. 가성비를 고려한다면 수요일이나 화요일을 공략하는 것이 대관료를 최대 20%까지 절감할 수 있는 비결입니다.</p>
+            </article>
+            <article>
+                <h3>멤버십 및 제휴 할인 활용법</h3>
+                <p>단순 방문보다는 기업 회원으로 등록된 노래방을 활용하세요. 법인카드로 결제 시 추가 서비스 시간이나 기본 안주 업그레이드 혜택을 챙기는 것이 실무자의 센스입니다.</p>
+            </article>
         </section>
 
         <section>
-            <div class="container">
-                <h2>CONSUMER TRENDS</h2>
-                <div class="grid-2">
-                    <div class="card">
-                        <h3>① 사전 예약 시스템 선호</h3>
-                        <p>2025년 1월 기준, 온라인 사전 예약 비율 73%. 전년 대비 18%p 증가. 특히 회식 목적의 경우 10인 이상 예약의 81%가 사전 예약 진행.</p>
-                        <p class="text-mono">데이터: 마포구 노래방 협회 통계</p>
-                    </div>
-                    <div class="card">
-                        <h3>② 부가 서비스 중요도 상승</h3>
-                        <p>음료 무한 리필, 스낵바, 룸 내 조명 시스템, 블루투스 스피커 등 부가 요소가 업소 선택의 34% 영향. 2024년 대비 12%p 상승.</p>
-                        <p class="text-mono">소비자 선호도 조사 (n=1,200)</p>
-                    </div>
-                </div>
-            </div>
-        
-<div class="seo-visual-divider" role="separator" aria-label="마포 단체 회식용 대형 룸 노래방 가격 정보 구분선" style="margin:80px 0;height:1px;background:#666666;opacity:0.1"></div>
-</section>
+            <h2>FAQ: 실무자가 가장 많이 묻는 질문</h2>
+            <ul>
+                <li><strong>Q: 대형 룸 예약 시 부가세 포함인가요?</strong> A: 마포 지역의 많은 대형 업소는 부가세 별도 가격을 제시하는 경우가 많으니, 견적 요청 시 '총액 정산' 기준인지 확인이 필요합니다.</li>
+                <li><strong>Q: 노래방 내 음식 반입이 가능한가요?</strong> A: 대형 룸의 경우 외부 음식 반입 시 콜키지 비용이 발생할 수 있습니다. 예약 시 업체의 규정을 미리 확인하는 것이 좋습니다.</li>
+            </ul>
+        </section>
+    </main>
 
-        <section>
-            <div class="container">
-                <h2>PRICE MOVEMENT</h2>
-                <div class="card full-bleed" style="margin:0 -1.5rem; padding:2rem 1.5rem;">
-                    <h3>지역별 시간당 가격 추이 (20인 기준)</h3>
-                    <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:1rem; margin-top:1rem;">
-                        <div style="background:#0a0a0a; padding:1rem; border:1px solid #333;">
-                            <p class="text-mono">합정</p>
-                            <p style="font-size:2rem; font-weight:900; color:#ff2a6d;">14~18만원</p>
-                            <p style="font-size:0.8rem;">전년 대비 +12%</p>
-                        </div>
-                        </body>
+    <footer>
+        <div class="n-wrap-64ia">
+            <p>&copy; 2024 Black Book Concierge. 모든 데이터는 시장 조사에 기반합니다.</p>
+        </div>
+    </footer>
+</body>
 </html>
