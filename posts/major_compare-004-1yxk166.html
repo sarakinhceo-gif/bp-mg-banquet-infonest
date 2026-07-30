@@ -23,15 +23,15 @@
     <h1>잘 몰라서 그런데, 엘든링 컷 보스 패턴이 마포 룸 노래방 가격 비교랑 닮았다는 말...</h1>
     <article>
       <p>"<형 이거 소리 크면 돼요?" 한마디에 3시간을 갈아넣었다."</p>
-<p>스피드런 포럼에서 흔히 볼 수 있는 투정이다. 1.04 패치 이전에는 <code>Morgott</code> 2阶段 페이즈 체인지 0.7초 프레임 윈도우를 건너뛰는 <code>route skip</code>이 존재했다. 페이즈 트랜지션 모션 프리즈 구간, 정확히 42프레임 안에 <code>quitout → reload</code>를 박아야 했다.</p>
+<p>스피드런 포럼에서 흔히 볼 수 있는 투정이다. 1.04 패치 이전에는 <code>Morgott</code> 2단계 페이즈 체인지 0.7초 프레임 윈도우를 건너뛰는 <code>route skip</code>이 존재했다. 페이즈 트랜지션 모션 프리즈 구간, 정확히 42프레임 안에 <code>quitout → reload</code>를 박아야 했다.</p>
 <p>그걸 나는 한 달 동안 매일 아침 연습했다.</p>
 <h3>데이터마이닝이 드러낸 세 마리</h3>
 <p>디스코르드 <code>eldenring-cutcontent</code> 채널에서 2022년 8월, 모델러가 추출한 <code>c0000.bnd</code> 잔여 파일 세 개가 공개됐다. 흔히 말하는 '미사용 보스'.</p>
 <p><strong><code>abductor_deviant</code></strong> — 기계 거인 변종. 로테이션 패턴이 <code>Abductor Virgin</code>과 72% 겹치지만, 페이즈2에서 레이저 대신 지면 균열 AoE가 들어간다. 밸런서가 "리소스 대비 플레이 밸류가 부족하다"고 커밋 로그에 남겼다.</p>
-<p><strong><code>misbegotten_champion</code></strong> — 미스비기튼 중형个体. 투기장 맵 <code>m60_51_40</code>에 바인딩되어 있었는데, 충돌 박스가 <code>Leonine Misbegotten</code> 프리팹과 겹치면서 스폰 즉시 클립 버그가 발생했다.</p>
+<p><strong><code>misbegotten_champion</code></strong> — 미스비기튼 중형개체. 투기장 맵 <code>m60_51_40</code>에 바인딩되어 있었는데, 충돌 박스가 <code>Leonine Misbegotten</code> 프리팹과 겹치면서 스폰 즉시 클립 버그가 발생했다.</p>
 <p><strong><code>fallen_parts_of_godrick</code></strong> — 이건 좀 잔인하다. 고드릭 패배 후 분리된 팔 다리가 독립 AI로 동작하는 구조. <code>phase_transition</code> 스크립트가 1.02 패치에서 리팩토링되면서 아예 쓰이지 못했다.</p>
 <p>스피드런 관점에서 보면, 이 세 보스의 공통점은 하나다. <strong>기존 루트와 프레임 단위 충돌이 일어나는 존재</strong>였다. 네가 아무리 빨리 달려도, 이 녀석들이 타임라인에 끼어드는 순간 루트 전체가 박살났다.</p>
-<h3>컷的理由은 결국 "어디에 돈 쓸 것인가"</h3>
+<h3>컷의 이유은 결국 "어디에 돈 쓸 것인가"</h3>
 <p>여기서 잠깐. 게임이든 장소든 결국 자원 배분의 문제다.</p>
 <p>마포 쪽에서 회식 장소 고를 때 비슷한 딜레마를 겪는 사람들이 많다. 대형 룸을 잡자니 시간당 단가가 올라가고, 소형 룸을 나눠 잡자니 단체 분위기가 깨진다. 엘든링이 컷 보스를 넣지 않은 이유도 결국 같다. <strong>기존 체계에서 효율적으로 작동하지 못하는 콘텐츠는 과감히 도려냈다.</strong></p>
 <p>단, 여기서 중요한 차이가 있다. 게임은 컷해도 유저가 모르지만, 장소는 잘못 고르면 그날 회식 망친다. 그래서 나는 아는 사람들한테 `<a href="https://hwagogshirtsroom.com/" target="_blank" rel="noopener noreferrer">hwagogshirtsroom.com</a>` 링크를 보내는 편이다. 마포 단체 회식용 대형 룸 노래방 가격 정보가 실시간으로 정리되어 있어서, "가성비 좋은 룸 몇 개"랑 "프리미엄 룸"이 어떤 차이인지 한눈에 비교할 수 있다.</p>
