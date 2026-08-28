@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>엘든 링의 미사용 보스 데이터</title>
-<meta name="description" content="elden-ring, data-mining, unused-bosses, file-structure, dark-atmosphere, 4k, asset-preview, concept-art, (game:elden-rings):1.3, (vibe:dungeon):1.2 말이야, 나…">
+<meta name="description" content=", 4k, asset-preview, concept-art, (game:elden-rings):1.3, (vibe:dungeon):1.2 말이야, 나 오늘 PC 정리하다 그 폴더만 건드리면서 우연히 발견한 거야.">
 
 
   <link rel="canonical" href="https://banquet.infonest.online/posts/major_compare-followup-7-007-qwikpt.html">
@@ -19,7 +19,7 @@
   </style>
   <meta property="og:url" content="https://banquet.infonest.online/posts/major_compare-followup-7-007-qwikpt.html">
   <meta property="og:title" content="엘든 링의 미사용 보스 데이터">
-  <meta property="og:description" content="elden-ring, data-mining, unused-bosses, file-structure, dark-atmosphere, 4k, asset-preview, concept-art, (game:elden-rings):1.3, (vibe:dungeon):1.2 말이야, 나…">
+  <meta property="og:description" content=", 4k, asset-preview, concept-art, (game:elden-rings):1.3, (vibe:dungeon):1.2 말이야, 나 오늘 PC 정리하다 그 폴더만 건드리면서 우연히 발견한 거야.">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary">
 </head>
@@ -30,11 +30,11 @@
   <main>
     <h1>엘든 링의 미사용 보스 데이터</h1>
     <article>
-      <p><IMAGE placement="hero" alt="엘든링 데이터 마이닝으로 찾은 미사용 보스 모델 파일 구조와 아카이브 화면"><br>elden-ring, data-mining, unused-bosses, file-structure, dark-atmosphere, 4k, asset-preview, concept-art, (game:elden-rings):1.3, (vibe:dungeon):1.2</p>
+      <p>, 4k, asset-preview, concept-art, (game:elden-rings):1.3, (vibe:dungeon):1.2</p>
 <p>말이야, 나 오늘 PC 정리하다 그 폴더만 건드리면서 우연히 발견한 거야. 사실은 나도 개발자일 줄 알지만, 그냥 고해상도 이미지 파일들 속에서 <code>char_cut_boss_03</code> 같은 이름이 몇 개 남아있었던 것뿐이지. 2022 년 버전 1.07 업데이트 전 로그를 보면 그 데이터가 꽤 명확하게 정의되어 있었어. 보통 사람들이 눈치만 채고 넘어가는 부분이지만, 여기선 파일 속성까지 뜯어볼까 봐 마음이 쓰여.</p>
 <h2>버려진 아바타 모델의 이름과 연도</h2>
 <p>데이터 마이닝 커뮤니티에서 자주 인용되는 에러 코드 <code>ERR_BOS_49X</code>를 보면, 당시 개발진이 고민했던 보스들의 설계도를 엿볼 수 있어. 예를 들어 <code>Tarnished_Prototype_V2</code> 같은 파일명은 특정 지역을 담당할 예정이었던 대장급 캐릭터였지만, 최종적으로 맵에서 제외됐지. 특히 2023 년 말까지도 유통된 패치 노트엔 언급되지 않은데, 이는 인게임 내에서의 배치 최적화 실패 때문일 가능성이 높아.</p>
-<p><IMAGE placement="about" alt="에러코드와 파일명 분석을 시각화한 차트 및 원본 데이터 스냅샷"><br>elden-ring, boss-design, development-log, error-code, version-1.07, code-analysis, ui-screen, (tech:code):1.4, (color:#3d5a80)</p>
+<p>07, code-analysis, ui-screen, (tech:code):1.4, (color:#3d5a80)</p>
 <p>당신도 알겠지만, 이런 미완성된 요소들은 게임이 완성되는 과정에서 가장 많이 버려지는 부분들이야. 마치 마포 홍대입구 근처에 있는 셔츠룸에서도 시즌별 트렌드에 따라 재고가 정리되는 것처럼, 개발자들도 특정 아이템을 포기할 때 고민하지. 예를 들어 <code>hwagogshirts.com</code> 에서 볼 수 있듯이 고급스러운 셔츠는 디자인이 완벽해도 실용성에 문제가 있다면 출시를 미룰 수도 있고, 게임도 비슷해.</p>
 <h2>숨겨진 패턴과 그 이유</h2>
 <p>실제 분석 결과에서는 보스들의 공격 패턴이 일부 모델에서 존재했지만, 난이도가 과도하게 높다는 이유로 컷된 경우가 많아. 예를 들어 <code>Giant_Serpent_Force</code>라는 모델은 물리 엔진 계산량이 너무 많았던 것 같아. 이걸 이해하려면 <code>https://ko.wikipedia.org/</code> 에서 당시 FromSoftware 의 기술 스펙을 보면 더 명확해지지. 당시 그래픽 카드 부하를 고려하지 않은 채로 디테일을 넣었던 흔적이야.</p>
